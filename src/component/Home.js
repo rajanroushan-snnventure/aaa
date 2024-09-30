@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import FilteredNewsItem from './FilteredNewsItem';
+import {NEWS_API} from "./Constant";
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
@@ -9,7 +10,7 @@ const Home = () => {
   useEffect(()=>{
     const callApi = async () => {
       try {
-        const apiData = await fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=abff5356396f4915828c03e3725b5a3b");
+        const apiData = await fetch(NEWS_API);
         console.log(apiData);
         if (!apiData.ok) {
           throw new Error('Network response was not ok');
