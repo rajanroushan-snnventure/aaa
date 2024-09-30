@@ -23,6 +23,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+/* Hide the header when .no-header class is applied */
+.no-header header {
+  display: none;
+}
+
 
 .App-link {
   color: #61dafb;

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import NewsItem from './NewsItem';
+import FilteredNewsItem from './FilteredNewsItem';
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
@@ -39,7 +39,7 @@ const Home = () => {
   }
   return (
     <div>
-      <NewsItem listData={articles}/>
+      <FilteredNewsItem listData={articles}/>
     </div>
   );
 }

@@ -2,8 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
+  }
+  .bookmark-button {
+    justify-content: end;
+    padding: 5px;
+    align-items: end;
   }
   
   .news-card {
